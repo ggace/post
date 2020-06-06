@@ -57,4 +57,4 @@ def show():
 
 if __name__ == '__main__':
     # threaded=True 로 넘기면 multiple plot이 가능해짐
-  app.run(host='min.seo.co.kr')
+  app.run()
