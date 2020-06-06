@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>write</title>
+  </head>
+  <style>
+    .blank{
+      display: none;
+    }
+  </style>
+  <body>
+    <h1>Min's Board</h1>
+    <div class='write'>
+      <form action="/give">
+        <p>title :
+        <input type="text" class='tit' name="tit" value="" onchange='change()'></p>
+
+        <br>
+        <p>
+        text :
+        <br>
+        <textarea class='text' name="text" rows="8" cols="80"></textarea></p>
+
+        <button type="submit" name="button">write</button>
+
+        <input class='blank' type="text" name="blank" value="true">
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      function change(){
+        document.querySelector('.blank').value = 'false';
+      }
+    </script>
+  </body>
+</html>
